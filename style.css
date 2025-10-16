@@ -1176,11 +1176,14 @@ html {
 
 /* Certificate Section */
 .project-card {
-    background-color: #273549;
-    border: 1px solid #3d4f6b;
-    border-radius: 1rem;
+    background: var(--gradient-card);
+    border-radius: var(--border-radius);
     overflow: hidden;
-    transition: all 0.3s ease;
+    transition: var(--transition);
+    box-shadow: var(--shadow-card);
+    backdrop-filter: blur(10px);
+    color: var(--text-primary);
+    border: 1px solid #3d4f6b;
 }
 
 .project-card:hover {
@@ -1224,6 +1227,7 @@ html {
 
 .card-content {
     padding: 1.5rem;
+    background-color: var(--gradient-card);
 }
 
 .card-title {
@@ -1269,4 +1273,5 @@ html {
 .food-card .card-image {
     background: linear-gradient(to bottom, #fde8e8 0%, #f8c4b4 100%);
 }
+
 
