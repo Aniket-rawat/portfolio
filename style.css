@@ -98,6 +98,7 @@ body {
     padding: 8px 16px;
     background: var(--gradient-primary);
     transform: translateY(-5px);
+    box-shadow: 5px 3px 20px rgba(79, 70, 229, 0.4);
 }
 
 /* Modern Hero Section */
@@ -1273,5 +1274,6 @@ html {
 .food-card .card-image {
     background: linear-gradient(to bottom, #fde8e8 0%, #f8c4b4 100%);
 }
+
 
 
