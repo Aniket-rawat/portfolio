@@ -1,31 +1,13 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // Initialize AOS
-    AOS.init({
-        duration: 1000,
-        easing: 'ease-in-out',
-        once: true,
-        offset: 100
-    });
+//Active Nav-link
+const links = document.querySelectorAll(".nav-link");
 
-    
-    // Initialize all components
-    initNavbar();
-    initTypingEffect();
-    initSkillAnimations();
-    initContactForm();
-    initSmoothScrolling();
-    initTooltips();
-    initParticleEffect();
-    
-    // Remove loading screen
-    setTimeout(() => {
-        const loading = document.querySelector('.loading');
-        if (loading) {
-            loading.style.opacity = '0';
-            setTimeout(() => loading.remove(), 300);
-        }
-    }, 1000);
+links.forEach((link) => {
+  link.addEventListener("click", function () {
+    links.forEach((l) => l.classList.remove("active")); // remove active from all
+    this.classList.add("active"); // add active to clicked link
+  });
 });
+
 
 //Top to Bottom button
 const toTopBtn = document.getElementById("toTopBtn");
@@ -47,4 +29,5 @@ const toTopBtn = document.getElementById("toTopBtn");
       });
 
     });
+
 
