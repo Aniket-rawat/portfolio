@@ -1,822 +1,423 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" data-theme="dark">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aniket Rawat - Web Developer & Web Designer</title>
-    <meta name="description"
-        content="Aniket Rawat - Passionate Web Designer and Developer specializing in front-end and back-end technologies" />
-    <meta name="author" content="Aniket Rawat" />
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-    <!-- AOS Animation Library -->
-    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111311">
+  <meta name="description"
+    content="Aniket Rawat is a WordPress and frontend developer building polished, responsive websites with WordPress, Elementor, HTML, CSS and JavaScript.">
+  <meta name="author" content="Aniket Rawat">
+  <title>Aniket Rawat — WordPress &amp; Frontend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script>try { document.documentElement.dataset.theme = localStorage.getItem('portfolio-theme') || 'dark' } catch (e) { }</script>
 </head>
 
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="#home">Aniket Rawat</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto ">
-                    <li class="nav-item">
-                        <a class="nav-link rounded-pills" href="#home">
-                            <i class="fas fa-home me-2"></i>Home
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">
-                            <i class="fas fa-user me-2"></i>About
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">
-                            <i class="fas fa-code me-2"></i>Skills
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">
-                            <i class="fas fa-briefcase me-2"></i>Portfolio
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">
-                            <i class="fas fa-cogs me-2"></i>Services
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">
-                            <i class="fas fa-envelope me-2"></i>Contact
-                        </a>
-                    </li>
-                </ul>
-            </div>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand" href="#home" aria-label="Aniket Rawat home"><span
+            class="brand-mark">A</span><span>Aniket Rawat<span class="brand-period">.</span></span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#siteNav"
+          aria-controls="siteNav" aria-expanded="false" aria-label="Toggle navigation"><span
+            class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="siteNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+            <li class="nav-item"><a class="nav-link" href="#portfolio">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+            <li class="nav-item ms-lg-3"><button class="theme-toggle" type="button" aria-label="Switch to light mode"
+                title="Switch theme"><i class="fa-regular fa-sun" aria-hidden="true"></i></button></li>
+            <li class="nav-item ms-lg-3"><a class="button button-small" href="#contact">Let’s talk <i
+                  class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></li>
+          </ul>
         </div>
+      </div>
     </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero-section">
-        <div class="container">
-            <div class="row justify-content-center min-vh-100 align-items-center">
-                <div class="col-lg-8 text-center" data-aos="fade-up">
-                    <div class="hero-content">
-
-
-                        <!-- Profile Avatar -->
-                        <div class="hero-avatar mb-4" data-aos="zoom-in" data-aos-delay="200">
-                            <div class="avatar-container">
-                                <div class="avatar-initials">AR</div>
-                                <div class="avatar-ring"></div>
-                            </div>
-                        </div>
-
-                        <!-- Main Title -->
-                        <h1 class="hero-title mb-4" data-aos="fade-up" data-aos-delay="300">
-                            Aniket Rawat
-                        </h1>
-
-                        <!-- Role Tags -->
-                        <div class="role-tags mb-4" data-aos="fade-up" data-aos-delay="400">
-                            <span class="role-tag">
-                                <i class="fas fa-code me-2"></i>Web Developer
-                            </span>
-                            <span class="role-tag">
-                                <i class="fas fa-palette me-2"></i>Web Designer
-                            </span>
-                        </div>
-
-                        <!-- Description -->
-                        <p class="hero-description mb-5" data-aos="fade-up" data-aos-delay="500">
-                            Creating modern, responsive websites with clean design and robust functionality
-                        </p>
-
-                        <p class="hero-subdescription mb-5" data-aos="fade-up" data-aos-delay="600">
-                            Specializing in front-end aesthetics and back-end architecture to deliver
-                            exceptional digital experiences that engage users and drive results.
-                        </p>
-
-                        <!-- Action Buttons -->
-                        <div class="hero-buttons d-flex flex-wrap mb-sm-3" data-aos="fade-up" data-aos-delay="700">
-                            <a href="Aniket_Rawat.pdf"  target="_blank" class="btn btn-primary btn-lg me-3">
-                                Download CV
-                                <i class="fas fa-arrow-right ms-2"></i>
-                            </a>
-                            <a href="#contact" class="btn btn-outline-primary btn-lg">
-                                Get In Touch
-                            </a>
-                        </div>
-                    </div>
-                </div>
+  </header>
+  <main id="main">
+    <section class="hero section-shell" id="home" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="status-dot"></span> WORDPRESS &amp; FRONTEND DEVELOPER</p>
+          <h1 id="hero-title">Thoughtful websites.<br><span>Built to work beautifully.</span></h1>
+          <p class="hero-lede">I’m Aniket Rawat, a junior developer focused on WordPress and frontend development. I
+            turn ideas into responsive, easy-to-use web experiences with a careful eye for detail.</p>
+          <div class="hero-actions"><a class="button" href="#portfolio">View my work <i class="fa-solid fa-arrow-down"
+                aria-hidden="true"></i></a><a class="button button-quiet" href="#contact">Contact me <i
+                class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></div>
+          <div class="hero-meta"><span>Based in New Delhi, India</span><span class="meta-separator"></span><span>Open to
+              opportunities</span></div>
+        </div>
+        <div class="hero-art reveal" aria-label="Developer workspace illustration" role="img">
+          <div class="art-orbit orbit-one"></div>
+          <div class="art-orbit orbit-two"></div>
+          <div class="code-window">
+            <div class="window-bar">
+              <div class="window-dots"><i></i><i></i><i></i></div><span>aniket.dev</span><i
+                class="fa-solid fa-ellipsis"></i>
             </div>
-        </div>
-
-        <!-- Scroll Indicator -->
-        <div class="scroll-indicator d-none d-md-block" data-aos="fade-up" data-aos-delay="800">
-            <div class="scroll-arrow rounded-pill">
-                <i class="fa-solid fa-arrow-down-long"></i>
+            <div class="code-lines" aria-hidden="true">
+              <div><span class="code-muted">01</span><span class="code-purple">&lt;section</span> <span
+                  class="code-green">class</span>=<span class="code-orange">"your-idea"</span><span
+                  class="code-purple">&gt;</span></div>
+              <div><span class="code-muted">02</span> &nbsp;<span class="code-purple">&lt;h1&gt;</span>Built with
+                purpose<span class="code-purple">&lt;/h1&gt;</span></div>
+              <div><span class="code-muted">03</span> &nbsp;<span class="code-purple">&lt;p&gt;</span>Designed for
+                people<span class="code-purple">&lt;/p&gt;</span></div>
+              <div><span class="code-muted">04</span><span class="code-purple">&lt;/section&gt;</span></div>
             </div>
+            <div class="window-footer"><span><i class="fa-brands fa-wordpress" aria-hidden="true"></i>
+                WordPress</span><span><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Responsive by
+                design</span></div>
+          </div>
+          <div class="floating-chip chip-wordpress"><i class="fa-brands fa-wordpress" aria-hidden="true"></i> WordPress
+          </div>
+          <div class="floating-chip chip-code"><i class="fa-solid fa-code" aria-hidden="true"></i> Clean code</div>
+          <div class="art-caption"><span class="caption-line"></span><span>Design-minded. Detail-driven.</span></div>
         </div>
-
-        <!-- Background Elements -->
-        <div class="hero-bg-elements">
-            <div class="bg-circle bg-circle-1"></div>
-            <div class="bg-circle bg-circle-2"></div>
-            <div class="bg-circle bg-circle-3"></div>
-        </div>
+      </div>
+      <div class="container hero-bottom"><span>SCROLL TO EXPLORE</span><span class="hero-bottom-line"></span><span>01 /
+          06</span></div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
-                    <div class="section-header">
-                        <span class="section-badge">About Me</span>
-                        <h2 class="section-title">Education & Experience</h2>
-                        <p class="section-subtitle">Passionate developer with a strong foundation in modern web
-                            technologies</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-lg-6" data-aos="fade-right">
-                    <div class="about-content">
-                        <div class="content-card">
-                            <h3 class="mb-4">My Journey in Web Development</h3>
-                            <p class="mb-4">
-                                I am a passionate web designer and developer with a strong foundation in both
-                                front-end and back-end technologies. My journey began with a fascination for
-                                creating digital experiences that are both beautiful and functional.
-                            </p>
-                            <p class="mb-4">
-                                With expertise in HTML5, CSS3, JavaScript, Bootstrap, PHP, and MySQL, I specialize
-                                in creating responsive websites and dynamic web applications that provide excellent
-                                user experiences across all devices.
-                            </p>
-                            <div class="highlight-box">
-                                <i class="fas fa-lightbulb"></i>
-                                <div>
-                                    <h5>My Philosophy</h5>
-                                    <p>Clean code, beautiful design, and seamless user experience are the foundations of
-                                        every project I work on.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6" data-aos="flip-left">
-                    <div class="education-timeline">
-                        <div class="timeline-container">
-                            <div class="timeline-item">
-                                <div class="timeline-icon">
-                                    <i class="fas fa-graduation-cap"></i>
-                                </div>
-                                <div class="timeline-content">
-                                    <h4>Diploma in Graphic, Web Design & Development</h4>
-                                    <p class="timeline-date">Aug 2023 - sept 2025</p>
-                                    <p>Arena Animation, South Ex, New Delhi</p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-icon">
-                                    <i class="fas fa-university"></i>
-                                </div>
-                                <div class="timeline-content">
-                                    <h4>BA Program</h4>
-                                    <p class="timeline-date">Completed</p>
-                                    <p>Indira Gandhi National Open University</p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-icon">
-                                    <i class="fas fa-school"></i>
-                                </div>
-                                <div class="timeline-content mb-0">
-                                    <h4>10th & 12th Grade</h4>
-                                    <p class="timeline-date">Completed</p>
-                                    <p>Government School, New Delhi (CBSE Board)</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section class="section section-alt" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">A LITTLE ABOUT ME</p>
+          <h2 id="about-title">Building for the web,<br><span>with intention.</span></h2>
         </div>
+        <div class="about-grid">
+          <div class="about-intro reveal">
+            <p class="lead-copy">I’m a WordPress and frontend developer with around one year of hands-on experience
+              bringing websites to life.</p>
+            <p>I enjoy shaping a project from its first layout to the final responsive details. My work spans WordPress
+              theme customization, page builders, custom widgets and templates, alongside frontend development with
+              HTML, CSS, SCSS, Bootstrap and JavaScript.</p>
+            <p>I care about accessible, maintainable websites that feel considered on every screen. I’m always learning,
+              collaborating and looking for better ways to make the web work for people.</p><a class="text-link"
+              href="Aniket_Rawat.pdf" target="_blank" rel="noopener">View my résumé <i
+                class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+          </div>
+          <aside class="about-note reveal"><span class="note-icon"><i class="fa-solid fa-wand-magic-sparkles"
+                aria-hidden="true"></i></span>
+            <p class="eyebrow">MY APPROACH</p>
+            <h3>Good design is in the details.</h3>
+            <p>Clear structure, responsive layouts and thoughtful interactions make the difference between a page that
+              exists and an experience that works.</p>
+            <div class="note-signature">Aniket Rawat <span>— developer</span></div>
+          </aside>
+        </div>
+        <div class="education-row reveal">
+          <div><span class="eyebrow">EDUCATION</span></div>
+          <div class="education-item"><strong>Diploma in Graphic, Web Design &amp; Development</strong><span>Arena
+              Animation, South Ex, New Delhi · Aug 2023 – Sep 2025</span></div>
+          <div class="education-item"><strong>BA Program</strong><span>Indira Gandhi National Open University</span>
+          </div>
+          <div class="education-item"><strong>10th &amp; 12th Grade</strong><span>Government School, New Delhi ·
+              CBSE</span></div>
+        </div>
+      </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="section-padding bg-dark-secondary">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
-                    <div class="section-header">
-                        <span class="section-badge">Skills & Expertise</span>
-                        <h2 class="section-title">Technologies I Work With</h2>
-                        <p class="section-subtitle">A comprehensive toolkit for modern web development</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="skills-container">
-                        <div class="skills-category" data-aos="fade-up" data-aos-delay="100">
-                            <h4 class="category-title">Frontend Technologies</h4>
-                            <div class="skills-grid">
-                                <div class="skill-badge">
-                                    <div class="skill-icon">
-                                        <i class="fab fa-html5"></i>
-                                    </div>
-                                    <span class="skill-name">HTML5</span>
-
-                                    <div class="skill-level">
-                                        <div class="skill-progress" style="width: 85%"></div>
-                                    </div>
-                                </div>
-                                <div class="skill-badge">
-                                    <div class="skill-icon">
-                                        <i class="fab fa-css3-alt"></i>
-                                    </div>
-                                    <span class="skill-name">CSS3</span>
-                                    <div class="skill-level">
-                                        <div class="skill-progress" style="width: 75%"></div>
-                                    </div>
-                                </div>
-                                <div class="skill-badge">
-                                    <div class="skill-icon">
-                                        <i class="fab fa-js-square"></i>
-                                    </div>
-                                    <span class="skill-name">JavaScript</span>
-                                    <div class="skill-level">
-                                        <div class="skill-progress" style="width: 68%"></div>
-                                    </div>
-                                </div>
-                                <div class="skill-badge">
-                                    <div class="skill-icon">
-                                        <i class="fab fa-bootstrap"></i>
-                                    </div>
-                                    <span class="skill-name">Bootstrap 5</span>
-                                    <div class="skill-level">
-                                        <div class="skill-progress" style="width: 90%"></div>
-                                    </div>
-                                </div>
-                                <div class="skill-badge">
-                                    <div class="skill-icon">
-                                        <i class="fas fa-wind"></i>
-                                    </div>
-                                    <span class="skill-name">Tailwind CSS</span>
-                                    <div class="skill-level">
-                                        <div class="skill-progress" style="width: 75%"></div>
-                                    </div>
-                                </div>
-                                <div class="skill-badge">
-                                    <div class="skill-icon">
-                                        <i class="fab fa-react"></i>
-                                    </div>
-                                    <span class="skill-name">React</span>
-                                    <div class="skill-level">
-                                        <div class="skill-progress" style="width: 50%"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="skills-category" data-aos="fade-up" data-aos-delay="200">
-                            <h4 class="category-title">Backend & Database</h4>
-                            <div class="skills-grid">
-                                <div class="skill-badge">
-                                    <div class="skill-icon">
-                                        <i class="fab fa-php"></i>
-                                    </div>
-                                    <span class="skill-name">PHP</span>
-                                    <div class="skill-level">
-                                        <div class="skill-progress" style="width: 65%"></div>
-                                    </div>
-                                </div>
-                                <div class="skill-badge">
-                                    <div class="skill-icon">
-                                        <i class="fas fa-database"></i>
-                                    </div>
-                                    <span class="skill-name">MySQL</span>
-                                    <div class="skill-level">
-                                        <div class="skill-progress" style="width: 75%"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="skills-category" data-aos="fade-up" data-aos-delay="300">
-                            <h4 class="category-title">Tools & Design</h4>
-                            <div class="skills-grid">
-                                <div class="skill-badge">
-                                    <div class="skill-icon">
-                                        <i class="fab fa-github"></i>
-                                    </div>
-                                    <span class="skill-name">GitHub</span>
-                                    <div class="skill-level">
-                                        <div class="skill-progress" style="width: 85%"></div>
-                                    </div>
-                                </div>
-                                <div class="skill-badge">
-                                    <div class="skill-icon">
-                                        <i class="fas fa-paint-brush"></i>
-                                    </div>
-                                    <span class="skill-name">Photoshop</span>
-                                    <div class="skill-level">
-                                        <div class="skill-progress" style="width: 65%"></div>
-                                    </div>
-                                </div>
-                                <div class="skill-badge">
-                                    <div class="skill-icon">
-                                        <i class="fas fa-vector-square"></i>
-                                    </div>
-                                    <span class="skill-name">Illustrator</span>
-                                    <div class="skill-level">
-                                        <div class="skill-progress" style="width: 75%"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">MY TOOLKIT</p>
+          <h2 id="skills-title">Skills that move<br><span>projects forward.</span></h2>
+          <p class="section-description">A practical set of tools for building, customizing and refining websites.</p>
         </div>
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <div class="skill-card-top"><span class="skill-icon"><i class="fa-brands fa-wordpress"
+                  aria-hidden="true"></i></span><span class="skill-index">01</span></div>
+            <h3>WordPress Development</h3>
+            <ul class="skill-list">
+              <li>WordPress Development</li>
+              <li>Elementor &amp; Elementor Pro</li>
+              <li>WPBakery Page Builder</li>
+              <li>Custom Widgets &amp; Theme Customization</li>
+              <li>Single Page Templates</li>
+              <li>WordPress Functions &amp; Hooks</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-card-top"><span class="skill-icon"><i class="fa-solid fa-laptop-code"
+                  aria-hidden="true"></i></span><span class="skill-index">02</span></div>
+            <h3>Frontend Development</h3>
+            <ul class="skill-list">
+              <li>HTML5 &amp; CSS3</li>
+              <li>SCSS</li>
+              <li>Bootstrap 5</li>
+              <li>JavaScript</li>
+              <li>Responsive Web Design</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-card-top"><span class="skill-icon"><i class="fa-solid fa-terminal"
+                  aria-hidden="true"></i></span><span class="skill-index">03</span></div>
+            <h3>Programming Languages</h3>
+            <ul class="skill-list">
+              <li>PHP <span class="skill-note">Basic</span></li>
+              <li>MySQL <span class="skill-note">Basic</span></li>
+              <li>React.js <span class="skill-note">Basic</span></li>
+              <li>JavaScript</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-card-top"><span class="skill-icon"><i class="fa-solid fa-screwdriver-wrench"
+                  aria-hidden="true"></i></span><span class="skill-index">04</span></div>
+            <h3>Tools &amp; Technologies</h3>
+            <ul class="skill-list">
+              <li>Git &amp; GitHub</li>
+              <li>Elementor</li>
+              <li>WPBakery</li>
+              <li>Bootstrap 5</li>
+              <li>WordPress</li>
+            </ul>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="section-padding">
-        <div class="container">
-            <div class="row align-items-stretch">
-                <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
-                    <div class="section-header">
-                        <span class="section-badge">Portfolio</span>
-                        <h2 class="section-title">Featured Projects</h2>
-                        <p class="section-subtitle">Showcase of my recent projects</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row text">
-
-                
-                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="portfolio-card">
-                        <div class="portfolio-image">
-                            <img src="images/clothes.jpg" alt="Clothes Website" class="img-fluid">
-                            <div class="portfolio-overlay">
-                                <div class="portfolio-links">
-                                    <a href="https://aniket-rawat.github.io/clothes/" target="_blank"
-                                        class="portfolio-link"><i class="fas fa-eye"></i></a>
-                                    <a href="https://aniket-rawat.github.io/clothes/" target="_blank"
-                                        class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
-                                </div>
-                            </div>
-                            <div class="project-badge">E-Commerce</div>
-                        </div>
-                        <div class="portfolio-content">
-                            <h4 class="fw-bold">E-Commerce Clothes Website</h4>
-                            <p>Multi-page responsive e-commerce site featuring product filtering, Owl Carousel,
-                                and smooth navigation built with HTML5, CSS3, JavaScript, and Bootstrap.</p>
-                            <div class="portfolio-tech">
-                                <span class="tech-tag">HTML5</span>
-                                <span class="tech-tag">CSS3</span>
-                                <span class="tech-tag">JavaScript</span>
-                                <span class="tech-tag">Bootstrap</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="portfolio-card">
-                        <div class="portfolio-image">
-                            <img src="images/food.png" alt="Food Website" class="img-fluid">
-                            <div class="portfolio-overlay">
-                                <div class="portfolio-links">
-                                    <a href="https://aniket-rawat.github.io/food/" target="_blank"
-                                        class="portfolio-link"><i class="fas fa-eye"></i></a>
-                                    <a href="https://aniket-rawat.github.io/food/" target="_blank"
-                                        class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
-                                </div>
-                            </div>
-                            <div class="project-badge">Restaurant</div>
-                        </div>
-                        <div class="portfolio-content">
-                            <h4 class="fw-bold">Food Website</h4>
-                            <p>One-page responsive website with image galleries, Fancybox popups,
-                                sliders, menu filters, and smooth scrolling for enhanced user experience.</p>
-                            <div class="portfolio-tech">
-                                <span class="tech-tag">HTML5</span>
-                                <span class="tech-tag">CSS3</span>
-                                <span class="tech-tag">JavaScript</span>
-                                <span class="tech-tag">Fancybox</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="portfolio-card">
-                        <div class="portfolio-image">
-                            <img src="images/hotel.png" alt="Hotel Booking Website" class="img-fluid">
-                            <div class="portfolio-overlay">
-                                <div class="portfolio-links">
-                                    <a href="https://noble-nook.great-site.net/" target="_blank"
-                                        class="portfolio-link"><i class="fas fa-eye"></i></a>
-                                    <a href="https://noble-nook.great-site.net/" target="_blank"
-                                        class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
-                                </div>
-                            </div>
-                            <div class="project-badge">Full-Stack</div>
-                        </div>
-                        <div class="portfolio-content">
-                            <h4 class="fw-bold">Hotel Booking Platform</h4>
-                            <p>Dynamic booking platform with user and admin panels, built using PHP and MySQL
-                                with responsive design and efficient booking management system.</p>
-                            <div class="portfolio-tech">
-                                <span class="tech-tag">PHP</span>
-                                <span class="tech-tag">MySQL</span>
-                                <span class="tech-tag">Bootstrap</span>
-                                <span class="tech-tag">JavaScript</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="portfolio-card">
-                        <div class="portfolio-image">
-                            <img src="images/react-food.png" alt="Food Website" class="img-fluid">
-                            <div class="portfolio-overlay">
-                                <div class="portfolio-links">
-                                    <a href="https://aniket-rawat.github.io/foodora" target="_blank"
-                                        class="portfolio-link"><i class="fas fa-eye"></i></a>
-                                    <a href="https://aniket-rawat.github.io/foodora" target="_blank"
-                                        class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
-                                </div>
-                            </div>
-                            <div class="project-badge">Food-Multipage</div>
-                        </div>
-                        <div class="portfolio-content">
-                            <h4 class="fw-bold">Food Order Website</h4>
-                            <p>A modern multi-page responsive food ordering web app with dynamic menu, add-to-cart functionality,
-          responsive UI, and real-time updates built with React, Context API, and Tailwind.</p>
-                            <div class="portfolio-tech">
-                                <span class="tech-tag">React.js</span>
-                                <span class="tech-tag">Tailwind</span>
-                                <span class="tech-tag">React-Router-Dom</span>
-                                <span class="tech-tag">Context API</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class=" col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="portfolio-card">
-                        <div class="portfolio-image">
-                            <img src="images/notes-app.png" alt="Notes App" class="img-fluid">
-                            <div class="portfolio-overlay">
-                                <div class="portfolio-links">
-                                    <a href="https://cheerful-notes-app-2001.netlify.app/" target="_blank"
-                                        class="portfolio-link"><i class="fas fa-eye"></i></a>
-                                    <a href="https://cheerful-notes-app-2001.netlify.app/" target="_blank"
-                                        class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
-                                </div>
-                            </div>
-                            <div class="project-badge">Notes-App</div>
-                        </div>
-                        <div class="portfolio-content">
-                            <h4 class="fw-bold">Create Notes App</h4>
-                            <p>A modern single-page responsive notes application with dynamic note creation, 
-                                edit, and delete, real-time state updates, and a sleek UI built with React, useState, and Tailwind CSS.</p>
-                            <div class="portfolio-tech">
-                                <span class="tech-tag">JSX</span>
-                                <span class="tech-tag">Tailwind</span>
-                                <span class="tech-tag">React.js</span>
-                                <span class="tech-tag">UseState</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section class="section section-alt" id="experience" aria-labelledby="experience-title">
+      <div class="container experience-layout">
+        <div class="section-heading reveal">
+          <p class="eyebrow">CAREER</p>
+          <h2 id="experience-title">Experience &amp;<br><span>growth.</span></h2>
+          <p class="section-description">Hands-on work focused on building and improving websites.</p>
         </div>
+        <article class="experience-card reveal">
+          <div class="experience-top"><span class="experience-marker"><i class="fa-solid fa-briefcase"
+                aria-hidden="true"></i></span><span class="experience-date">NOV 2025 — PRESENT</span></div>
+          <h3>Junior WordPress Developer</h3>
+          <p class="experience-type">Professional experience</p>
+          <p>Developing and customizing WordPress websites with a focus on responsive layouts, polished page experiences
+            and maintainable frontend implementation.</p>
+          <ul class="experience-points">
+            <li>Build and customize pages with Elementor, Elementor Pro and WPBakery.</li>
+            <li>Work with WordPress themes, custom widgets, single page templates, functions and hooks.</li>
+            <li>Implement responsive interfaces using HTML, CSS, SCSS, Bootstrap 5 and JavaScript.</li>
+          </ul>
+        </article>
+      </div>
     </section>
 
-    <!-- NEW -->
-    <section class="section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
-                    <div class="section-header">
-                        <span class="section-badge">Achievements</span>
-                        <h2 class="section-title">Featured Achievements</h2>
-                        <p class="section-subtitle">Showcase of my recent achievements</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row g-4">
-                <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="project-card">
-                        <!-- Image Section -->
-                        <div class="card-image">
-                            <div class="badge-featured">Certificate</div>
-                            <img src="images/cert1.png" class="img-fluid" alt="" data-bs-toggle="modal"
-                                data-bs-target="#imageModal">
-                        </div>
-
-                        <!-- Content Section -->
-                        <div class=" card-content">
-                            <h3 class="card-title">1st Position – Pencil Fest <br> Web Design Competition</h3>
-                            <p class="card-description">
-                                Secured 1st position in the Pencil Fest Web Design Competition, organized by Arena
-                                Animation.
-                                Designed a fully responsive and creative website using HTML, CSS, JavaScript, Bootstrap,
-                                and Owl Carousel. The project was appreciated for its modern layout, interactive design,
-                                and smooth user experience.
-                            </p>
-
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-lg-4 " data-aos="fade-up" data-aos-delay="100">
-                    <div class="project-card">
-                        <!-- Image Section -->
-                        <div class="card-image">
-                            <div class="badge-featured">Diploma</div>
-                            <img src="images/deploma.png" class="img-fluid" alt="" data-bs-toggle="modal"
-                                data-bs-target="#imageModal1">
-                        </div>
-
-                        <!-- Content Section -->
-                        <div class="card-content">
-                            <h3 class="card-title">Diploma in Graphic, Web Design and Development</h3>
-                            <p class="card-description">
-                                Completed a Diploma in Graphic, Web Design and Development from Arena Animation, gaining
-                                hands-on experience in HTML, CSS, JavaScript, Bootstrap, Tailwind CSS, PHP, MySQL, and
-                                React.js.
-                            </p>
-
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="project-card food-card">
-                        <!-- Image Section -->
-                        <div class="card-image">
-                            <div class="badge-featured">Certificate</div>
-
-                            <img src="images/cert2.png" class="img-fluid" alt="" data-bs-toggle="modal"
-                                data-bs-target="#imageModal2">
-                        </div>
-
-                        <!-- Content Section -->
-                        <div class="card-content">
-                            <h3 class="card-title">Pencil Fest Web Design Competition – Volunteer</h3>
-                            <p class="card-description">
-                                Contributed as a volunteer in the Pencil Fest Web Design Competition organized by Arena
-                                Animation. Assisted participants with setup, design guidance, and event coordination,
-                                ensuring a smooth and successful competition experience.
-                            </p>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section class="section" id="portfolio" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-heading section-heading-row reveal">
+          <div>
+            <p class="eyebrow">SELECTED WORK</p>
+            <h2 id="projects-title">Projects I’ve<br><span>worked on.</span></h2>
+          </div>
+          <p class="section-description">A few builds exploring responsive design, frontend interactions and full-stack
+            fundamentals.</p>
         </div>
-    </section>
-    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content bg-dark">
-                <div class="modal-body text-center p-0">
-                    <img src="images/cert1.png" class="modal-img" alt="Full Image">
-                </div>
+        <div class="projects-grid">
+          <article class="project-card reveal"><a class="project-image" href="https://aniket-rawat.github.io/clothes/"
+              target="_blank" rel="noopener" aria-label="View E-Commerce Clothes Website live"><img
+                src="images/clothes.jpg" alt="Screenshot of the E-Commerce Clothes Website" loading="lazy"><span
+                class="project-arrow"><i class="fa-solid fa-arrow-up-right-from-square"
+                  aria-hidden="true"></i></span></a>
+            <div class="project-body">
+              <div class="project-meta"><span>01 / E-COMMERCE</span></div>
+              <h3>E-Commerce Clothes Website</h3>
+              <p>Multi-page responsive e-commerce site with product filtering, carousel features and smooth navigation.
+              </p>
+              <div class="tag-list"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Bootstrap</span>
+              </div><a class="project-link" href="https://aniket-rawat.github.io/clothes/" target="_blank"
+                rel="noopener">Live demo <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
             </div>
+          </article>
+          <article class="project-card reveal"><a class="project-image" href="https://aniket-rawat.github.io/food/"
+              target="_blank" rel="noopener" aria-label="View Food Website live"><img src="images/food.png"
+                alt="Screenshot of the Food Website" loading="lazy"><span class="project-arrow"><i
+                  class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span></a>
+            <div class="project-body">
+              <div class="project-meta"><span>02 / RESTAURANT</span></div>
+              <h3>Food Website</h3>
+              <p>One-page responsive restaurant site with galleries, popups, sliders, menu filters and smooth scrolling.
+              </p>
+              <div class="tag-list"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Fancybox</span>
+              </div><a class="project-link" href="https://aniket-rawat.github.io/food/" target="_blank"
+                rel="noopener">Live demo <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+            </div>
+          </article>
+          <article class="project-card reveal"><a class="project-image" href="https://noble-nook.great-site.net/"
+              target="_blank" rel="noopener" aria-label="View Hotel Booking Platform live"><img src="images/hotel.png"
+                alt="Screenshot of the Hotel Booking Platform" loading="lazy"><span class="project-arrow"><i
+                  class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span></a>
+            <div class="project-body">
+              <div class="project-meta"><span>03 / FULL-STACK</span></div>
+              <h3>Hotel Booking Platform</h3>
+              <p>Dynamic booking platform with user and admin panels and a responsive booking management experience.</p>
+              <div class="tag-list"><span>PHP</span><span>MySQL</span><span>Bootstrap</span><span>JavaScript</span>
+              </div><a class="project-link" href="https://noble-nook.great-site.net/" target="_blank"
+                rel="noopener">Live demo <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+            </div>
+          </article>
+          <article class="project-card reveal"><a class="project-image" href="https://aniket-rawat.github.io/foodora"
+              target="_blank" rel="noopener" aria-label="View Food Order Website live"><img src="images/react-food.png"
+                alt="Screenshot of the Food Order Website" loading="lazy"><span class="project-arrow"><i
+                  class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span></a>
+            <div class="project-body">
+              <div class="project-meta"><span>04 / FOOD ORDERING</span></div>
+              <h3>Food Order Website</h3>
+              <p>Multi-page food ordering app with a dynamic menu, add-to-cart flow, responsive UI and real-time
+                updates.</p>
+              <div class="tag-list"><span>React.js</span><span>Tailwind</span><span>React Router</span><span>Context
+                  API</span></div><a class="project-link" href="https://aniket-rawat.github.io/foodora" target="_blank"
+                rel="noopener">Live demo <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+            </div>
+          </article>
+          <article class="project-card reveal"><a class="project-image"
+              href="https://cheerful-notes-app-2001.netlify.app/" target="_blank" rel="noopener"
+              aria-label="View Create Notes App live"><img src="images/notes-app.png"
+                alt="Screenshot of the Create Notes App" loading="lazy"><span class="project-arrow"><i
+                  class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span></a>
+            <div class="project-body">
+              <div class="project-meta"><span>05 / PRODUCTIVITY</span></div>
+              <h3>Create Notes App</h3>
+              <p>Single-page notes app for creating, editing and deleting notes with responsive layout and live state
+                updates.</p>
+              <div class="tag-list"><span>React.js</span><span>Tailwind</span><span>JSX</span><span>useState</span>
+              </div><a class="project-link" href="https://cheerful-notes-app-2001.netlify.app/" target="_blank"
+                rel="noopener">Live demo <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+            </div>
+          </article>
         </div>
-    </div>
-
-    <div class="modal fade" id="imageModal1" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content bg-dark">
-                <div class="modal-body text-center p-0">
-                    <img src="images/deploma.png" class="modal-img" alt="Full Image">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="imageModal2" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content bg-dark">
-                <div class="modal-body text-center p-0">
-                    <img src="images/cert2.png" class="modal-img" alt="Full Image">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Services Section -->
-    <section id="services" class="section-padding bg-dark-secondary">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
-                    <div class="section-header">
-                        <span class="section-badge">Services</span>
-                        <h2 class="section-title">What I Can Do For You</h2>
-                        <p class="section-subtitle">Comprehensive web development solutions tailored to your needs</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-palette"></i>
-                        </div>
-                        <h4>Web Design</h4>
-                        <p>Creating beautiful, modern, and user-friendly website designs that reflect your brand
-                            identity and engage your audience.</p>
-                        <div class="service-features">
-                            <span>UI/UX Design</span>
-                            <span>Responsive Design</span>
-                            <span>Brand Identity</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-code"></i>
-                        </div>
-                        <h4>Front-end Development</h4>
-                        <p>Building responsive and interactive user interfaces using HTML5, CSS3, JavaScript, and
-                            Bootstrap for optimal user experience.</p>
-                        <div class="service-features">
-                            <span>HTML5 & CSS3</span>
-                            <span>JavaScript</span>
-                            <span>Bootstrap & React</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-server"></i>
-                        </div>
-                        <h4>Back-end Development</h4>
-                        <p>Developing robust server-side applications and database integration using PHP and MySQL for
-                            dynamic functionality.</p>
-                        <div class="service-features">
-                            <span>PHP Development</span>
-                            <span>MySQL Database</span>
-                            <span>API Integration</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-layer-group"></i>
-                        </div>
-                        <h4>Full-stack Development</h4>
-                        <p>Complete web application development from concept to deployment, handling both front-end and
-                            back-end requirements.</p>
-                        <div class="service-features">
-                            <span>End-to-end Development</span>
-                            <span>Project Management</span>
-                            <span>Deployment</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section-padding">
-        <div class="container">
-            <div class="row justify-content-center align-items-center">
-                <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
-                    <div class="section-header">
-                        <span class="section-badge">Contact Me</span>
-                        <h2 class="section-title">Let's Work Together</h2>
-                        <p class="section-subtitle">Ready to start your next project? I'd love to hear from you</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center align-items-center flex-wrap">
-                <div class="col" data-aos="fade-right">
-                    <div class="contact-info ">
-                        <div class="info-card">
-                            <h3 class="mb-4 text-center">Get In Touch</h3>
-                            <p class="mb-4 text-center">
-                                Get ready to send messages? I'd love to hear from you.
-                                Send me a message and I'll respond as soon as possible.
-                            </p>
-                            <div class="d-flex justify-content-around flex-wrap gap-4 mt-4">
-                                <div class="contact-item ">
-                                    <div class="contact-icon">
-                                        <i class="fas fa-envelope"></i>
-                                    </div>
-                                    <div class="contact-details ">
-                                        <h5>Email</h5>
-                                        <p>aniketrawatofficial178@gmail.com</p>
-                                    </div>
-                                </div>
-                                <div class="contact-item ">
-                                    <div class="contact-icon">
-                                        <i class="fas fa-phone"></i>
-                                    </div>
-                                    <div class="contact-details">
-                                        <h5>Phone</h5>
-                                        <p>+91 8448902458</p>
-                                    </div>
-                                </div>
-                                <div class="contact-item">
-                                    <div class="contact-icon">
-                                        <i class="fas fa-map-marker-alt"></i>
-                                    </div>
-                                    <div class="contact-details">
-                                        <h5>Location</h5>
-                                        <p>New Delhi, India</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
+    <section class="section section-alt" id="highlights" aria-labelledby="highlights-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">MILESTONES</p>
+          <h2 id="highlights-title">Learning through<br><span>doing.</span></h2>
         </div>
+        <div class="highlights-grid">
+          <article class="highlight-card reveal"><button class="certificate-image" type="button"
+              data-image="images/cert1.png" aria-label="View Pencil Fest first position certificate"><img
+                src="images/cert1.png" alt="Pencil Fest Web Design Competition first position certificate"
+                loading="lazy"><span><i class="fa-solid fa-up-right-and-down-left-from-center" aria-hidden="true"></i>
+                View certificate</span></button>
+            <div class="highlight-copy">
+              <p class="eyebrow">COMPETITION</p>
+              <h3>1st Position — Pencil Fest Web Design Competition</h3>
+              <p>Arena Animation · Designed a responsive website for the competition.</p>
+            </div>
+          </article>
+          <article class="highlight-card reveal"><button class="certificate-image" type="button"
+              data-image="images/deploma.png" aria-label="View diploma certificate"><img src="images/deploma.png"
+                alt="Diploma in Graphic, Web Design and Development certificate" loading="lazy"><span><i
+                  class="fa-solid fa-up-right-and-down-left-from-center" aria-hidden="true"></i> View
+                certificate</span></button>
+            <div class="highlight-copy">
+              <p class="eyebrow">EDUCATION</p>
+              <h3>Diploma in Graphic, Web Design and Development</h3>
+              <p>Arena Animation · Hands-on study across design and web development.</p>
+            </div>
+          </article>
+          <article class="highlight-card reveal"><button class="certificate-image" type="button"
+              data-image="images/cert2.png" aria-label="View Pencil Fest volunteer certificate"><img
+                src="images/cert2.png" alt="Pencil Fest Web Design Competition volunteer certificate"
+                loading="lazy"><span><i class="fa-solid fa-up-right-and-down-left-from-center" aria-hidden="true"></i>
+                View certificate</span></button>
+            <div class="highlight-copy">
+              <p class="eyebrow">COMMUNITY</p>
+              <h3>Pencil Fest Web Design Competition — Volunteer</h3>
+              <p>Arena Animation · Supported participants and event coordination.</p>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row align-items-center text-center text-md-start">
-                <div class="col-md-6">
-                    <div class="footer-brand">
-                        <h5><span class="navbar-brand ">Aniket Rawat</h5>
-                        <p>&copy; 2025 Aniket Rawat. All rights reserved.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/aniket-rawat-547735357" target="_blank" class="social-link" data-bs-toggle="tooltip" title="LinkedIn">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="https://github.com/Aniket-rawat" target="_blank" class="social-link" data-bs-toggle="tooltip" title="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://www.behance.net/aniketrawat5" target="_blank" class="social-link" data-bs-toggle="tooltip" title="Instagram">
-                            <i class="fa-brands fa-behance"></i>
-                        </a>
-                        <button id="toTopBtn"><i class="fa-solid fa-chevron-up"></i></button>
-                    </div>
-
-                </div>
-            </div>
+    <section class="section" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">HOW I CAN HELP</p>
+          <h2 id="services-title">From first draft<br><span>to finished site.</span></h2>
         </div>
-    </footer>
+        <div class="services-grid">
+          <article class="service-card reveal"><span class="service-number">01</span><i class="fa-brands fa-wordpress"
+              aria-hidden="true"></i>
+            <h3>WordPress Website Development</h3>
+            <p>Responsive WordPress websites shaped around your content, goals and audience.</p>
+          </article>
+          <article class="service-card reveal"><span class="service-number">02</span><i class="fa-solid fa-object-group"
+              aria-hidden="true"></i>
+            <h3>Elementor Website Design</h3>
+            <p>Thoughtful page layouts built and customized with Elementor and Elementor Pro.</p>
+          </article>
+          <article class="service-card reveal"><span class="service-number">03</span><i class="fa-solid fa-sliders"
+              aria-hidden="true"></i>
+            <h3>Website Customization</h3>
+            <p>Theme styling, page updates, templates and custom widgets to fit your needs.</p>
+          </article>
+          <article class="service-card reveal"><span class="service-number">04</span><i
+              class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i>
+            <h3>Responsive Website Development</h3>
+            <p>Layouts refined to work clearly across mobile, tablet and desktop screens.</p>
+          </article>
+          <article class="service-card reveal"><span class="service-number">05</span><i
+              class="fa-solid fa-window-maximize" aria-hidden="true"></i>
+            <h3>Landing Page Development</h3>
+            <p>Focused landing pages with clear content hierarchy and purposeful calls to action.</p>
+          </article>
+          <article class="service-card reveal"><span class="service-number">06</span><i class="fa-solid fa-code"
+              aria-hidden="true"></i>
+            <h3>Frontend Development</h3>
+            <p>Clean HTML, CSS, SCSS, Bootstrap and JavaScript for polished web experiences.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- AOS Animation JS -->
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-    <!-- Custom JS -->
-    <script src="script.js"></script>
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-inner reveal">
+        <div>
+          <p class="eyebrow">HAVE A ROLE OR PROJECT IN MIND?</p>
+          <h2 id="contact-title">Let’s make something<br><span>work beautifully.</span></h2>
+          <p class="contact-text">I’m open to conversations about WordPress and frontend opportunities. Reach out and
+            I’ll get back to you.</p>
+        </div>
+        <div class="contact-actions"><a class="button button-light" href="mailto:aniketrawatofficial178@gmail.com">Email
+            me <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a><a class="contact-social"
+            href="https://www.linkedin.com/in/aniket-rawat-547735357" target="_blank" rel="noopener"><i
+              class="fa-brands fa-linkedin" aria-hidden="true"></i> LinkedIn <i
+              class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a><a class="contact-social"
+            href="https://github.com/Aniket-rawat" target="_blank" rel="noopener"><i class="fa-brands fa-github"
+              aria-hidden="true"></i> GitHub <i class="fa-solid fa-arrow-up-right-from-square"
+              aria-hidden="true"></i></a><a class="contact-social" href="https://www.behance.net/aniketrawat5"
+            target="_blank" rel="noopener"><i class="fa-brands fa-behance" aria-hidden="true"></i> Behance <i
+              class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a><span
+            class="contact-email">aniketrawatofficial178@gmail.com</span></div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner"><a class="navbar-brand" href="#home"><span
+          class="brand-mark">A</span><span>Aniket Rawat<span class="brand-period">.</span></span></a><span>© <span
+          id="year">2026</span> Aniket Rawat</span><a class="back-top" href="#home">Back to top <i
+          class="fa-solid fa-arrow-up" aria-hidden="true"></i></a></div>
+  </footer>
+  <div class="image-viewer" id="imageViewer" role="dialog" aria-modal="true" aria-label="Certificate preview" hidden>
+    <button class="viewer-close" type="button" aria-label="Close certificate preview"><i class="fa-solid fa-xmark"
+        aria-hidden="true"></i></button><img src="" alt=""></div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="script.js" defer></script>
 </body>
 
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
